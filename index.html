@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Canvas Room | Art Class</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for an artistic look -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="logo">Helen Art Studio</div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#materials">Art Class</a></li>
+                <li><a href="#student-art">Student Art</a></li>
+                <li><a href="#schedule">Class Schedule</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Unleash Your Creativity</h1>
+            <p>Welcome to our studio space. Explore techniques, view incredible student work, and find your next class.</p>
+            <a href="#schedule" class="btn">View Schedule</a>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section">
+        <h2>About Art Class</h2>
+        <p class="section-subtitle">A collection of recent works and personal studies in fine art.</p>
+        <div class="grid">
+            <div class="card">
+                <div class="image-placeholder">
+			<img src="https://huierp.github.io/art-class-website/images/oil-landscape1.jpg" alt="Oil Landscape" class="art-image" onclick="openModal(this.src)">
+		</div>
+                <h3>Poetry of Fall</h3>
+                <p>Oil on Canvas, 1998</p>
+            </div>
+            <div class="card">
+                <div class="image-placeholder">
+			<img src="https://huierp.github.io/art-class-website/images/oil-landscape.jpg" alt="Charcoal Portrait" class="art-image" onclick="openModal(this.src)">
+		</div>
+                <h3>Serenity in Forest</h3>
+                <p>Marker on Paper, 2026</p>
+            </div>
+            <div class="card">
+                <div class="image-placeholder">
+			<img src="https://huierp.github.io/art-class-website/images/oil-landscape5.jpg" alt="Watercolor Still Life" class="art-image" onclick="openModal(this.src)">
+		</div>
+                <h3>Morning Botanicals</h3>
+                <p>Oil on Canvas, 2026</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Art Materials Section -->
+    <section id="materials" class="section bg-light">
+        <h2>Teaching Thoery </h2>
+        <p class="section-subtitle">Weekly studio and specialized workshop</p> 
+        <p class="section-subtitle">
+As an experienced art tutor with a passion for fostering creativity, I 
+have spent over 12 years working with students of all ages, helping them 
+discover and develop their artistic potential. My background includes a 
+Master’s degree in Landscape Architecture, along with specialized training in 
+digital art, such as painting, drawing, and mixed media. I have worked in a 
+variety of educational settings, from private studios to afterschool program, 
+and traditional classrooms. </p>
+ <p class="section-subtitle">
+My teaching philosophy is centered on encouraging individuality and 
+self-expression while providing students with a strong foundation in the 
+fundamentals of art. During my classes, I guide students 
+through the creative process, focusing on both art skills and creative 
+expression. Whether working with children, teens, or adults, I believe in 
+creating a supportive environment where each student feels inspired to take 
+risks and explore their unique artistic voice.</p>
+    </section>
+
+    <!-- Student Art Section -->
+    <section id="student-art" class="section">
+        <h2>Student Art Gallery</h2>
+        <p class="section-subtitle">Celebrating the incredible creativity of our art class.</p>
+        <div class="grid gallery">
+            <div class="card gallery-item">
+		<div class="image-placeholder">
+			<img src="D:/PPP/Art_website/images/kid_pic1.jpg" alt="Student Piece 1" class="art-image" onclick="openModal(this.src)">
+		</div>
+	   </div>
+           <div class="card gallery-item">
+		<div class="image-placeholder">
+			<img src="D:/PPP/Art_website/images/kid_pic2.jpg" alt="Student Piece 2" class="art-image" onclick="openModal(this.src)">
+	 	 </div>
+	   </div>
+           <div class="card gallery-item">
+		<div class="image-placeholder">
+			<img src="D:/PPP/Art_website/images/kid_pic5.jpg" alt="Student Piece 3" class="art-image" onclick="openModal(this.src)">
+	        </div>
+	   </div>
+           <div class="card gallery-item">
+		<div class="image-placeholder">
+			<img src="D:/PPP/Art_website/images/kid_pic6.jpg" alt="Student Piece 4" class="art-image" onclick="openModal(this.src)">
+	        </div>
+	   </div>
+           <div class="card gallery-item">
+		<div class="image-placeholder">
+			<img src="D:/PPP/Art_website/images/kid_pic7.jpg" alt="Student Piece 5" class="art-image" onclick="openModal(this.src)">
+	        </div>
+	   </div>
+           <div class="card gallery-item">
+		<div class="image-placeholder">
+			<img src="D:/PPP/Art_website/images/kid_pic3.jpg" alt="Student Piece 6" class="art-image" onclick="openModal(this.src)">
+	        </div>
+	   </div>
+           <div class="card gallery-item">
+		<div class="image-placeholder">
+			<img src="D:/PPP/Art_website/images/kid_class2.jpg" alt="Student Piece 7" class="art-image" onclick="openModal(this.src)">
+	        </div>
+	   </div>
+           <div class="card gallery-item">
+		<div class="image-placeholder">
+			<img src="D:/PPP/Art_website/images/kid_class1.jpg" alt="Student Piece 8" class="art-image" onclick="openModal(this.src)">
+	        </div>
+	   </div>
+        </div>
+    </section>
+
+    <!-- Class Schedule Section -->
+    <section id="schedule" class="section bg-light">
+        <h2>Class Schedule</h2>       
+        <div class="materials-list">
+            <div class="material-item">
+ <h3>Color-pencil Drawing</h3>
+  <ul>
+    <li>Introduction to lines (straight, curved, zigzag, dotted, etc.)</li>
+    <li>Create visual textures using patterns and repetition.</li>
+    <li>Project: Drawing a line art cityscape or landscape.</li>
+  </ul>
+  <br>
+  <h3>Acrylic Techniques</h3>
+  <ul>
+    <li>Basic acrylic techniques: wet-on-wet, dry brush, and blending.</li>
+    <li>Explore abstract art and expressive techniques.</li> 
+    <li>Project: Paint a simple landscape or abstract design using acrylic techniques.</li> 
+  </ul>
+  <br>
+  <h3>Drawing with Perspective</h3>
+  <ul>
+    <li>Introduction to one-point perspective for creating depth.</li>
+    <li>Project: Draw simple street scenes or buildings using perspective.</li>
+    <li>Project: Create a color wheel using paint or colored pencils.</li>
+  </ul>
+</div>
+</div>        
+
+
+<table>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Class Name</th>
+                    <th>Time</th>
+                    <th>Skill Level</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>Color-pencil Drawing</td>
+                    <td>4:00 PM - 5:30 PM</td>
+                    <td>Beginner</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>Acrylic Painting</td>
+                    <td>5:00 PM - 7:00 PM</td>
+                    <td>Intermediate</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>Classic Sketch & Ink </td> 
+                    <td>3:30 PM - 5:30 PM</td>
+                    <td>Advanced </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 The Canvas Room Art Class. Built for creators.</p>
+    </footer>
+
+</body>
+</html>
+
+<!-- Popup Modal -->
+<div id="imageModal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="zoomedImage">
+</div>
+
+<script>
+function openModal(imageSrc) {
+    document.getElementById("imageModal").style.display = "flex";
+    document.getElementById("zoomedImage").src = imageSrc;
+}
+
+function closeModal() {
+    document.getElementById("imageModal").style.display = "none";
+}
+</script>
